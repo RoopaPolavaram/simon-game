@@ -18,7 +18,7 @@ var level = 0;
 
 
 
-$(document).click(function() {
+$("h1").click(function() {
   if(!started) {
     $("#level-title").text("Level " + level);
     var randomChosenColour = buttonColours[nextSequence()];
@@ -80,7 +80,7 @@ function checkAnswer(currentLevel) {
     setTimeout(function(){
       $("body").removeClass("game-over");
     }, 300);
-    $("h1").text("Game Over, Press Any Key to Restart");
+    $("h1").text("Game Over, Press here to restart");
     startOver();
   }
 
